@@ -1,0 +1,50 @@
+﻿@model CasaRural.Models.Llogater
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Llogater</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NomLlogater)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NomLlogater)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CognomLlogater)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CognomLlogater)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CodiPostal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CodiPostal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NIF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NIF)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.LlogaterId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
